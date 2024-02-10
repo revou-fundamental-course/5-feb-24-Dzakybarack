@@ -4,6 +4,7 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Konverter Suhu</title>
+ <script src="Js/index.js"></script>
  <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
@@ -16,14 +17,18 @@
      </header>
      <div class="input-section">
        <label for="input-field">Celcius</label>
-       <input type="number" class="input-field">
+       <input type="number" id="input" class="input-field">
      </div>
-     <button class="button">Konversi</button>
+     <button class="button" onclick="hitung()">Konversi</button>
      <button class="button">Reset</button>
      <button class="button">Reverse</button>
+     <p>Fahrenheit<p>
      <div class="input-hasil">
-      <label for="input-hasil">Fahrenheit</label>
-      <input type="number" class="input-hasil">
+      <p id="hasil"></p>
+     </div>
+     <p>Cara Konversi</p>
+     <div class="proses">
+     <p id="proses"></p>
      </div>
 </body>
 </html>
